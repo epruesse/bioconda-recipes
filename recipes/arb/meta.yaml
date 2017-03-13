@@ -1,0 +1,38 @@
+{% set name = "ARB" %}
+{% set version = "6.0.6" %}
+{% set sha256 = "8b1fc3fd11bbb05aca4731ac8803c004a4f2b6b87c11b543660d07ea349a6c21" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{name | lower }}-{{ version }}-source.tgz
+  url: http://download.arb-home.de/release/{{ name|lower }}-{{ version }}/{{ name|lower }}-{{ version }}-source.tgz
+  sha: {{ sha256 }}
+
+build:
+  number: 0
+  skip: True  # [win]
+
+requirements:
+  build:
+    - gcc  # [not osx]
+    - llvm  # [osx]
+    - pkg-config
+    - openmotif
+
+  run:
+    - libgcc  # [not osx]
+    - openmotif
+
+test:
+  commands:
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
+
+about:
+  home: http://www.arb-home.de
+  license:
+  licence_file: arb_LICENSE.txt
+  summary: ARB 6 Sequence Analysis Suite
