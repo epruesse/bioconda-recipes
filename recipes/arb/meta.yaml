@@ -58,5 +58,6 @@ test:
 
 about:
   home: http://www.arb-home.de
+  license: ARB
   licence_file: arb_LICENSE.txt
   summary: ARB 6 Sequence Analysis Suite
