@@ -32,7 +32,7 @@ if [ -z "$DIRTY" ]; then
     esac >> config.makefile
 fi
 
-make_args="LIBPATH=-Wl,-rpath,$PREFIX/lib -L$ARBHOME/lib"
+make_args="LIBPATH=-Wl,-rpath,$ARBHOME/lib -L$ARBHOME/lib"
 no_mafftlinks="MAFFTLINKS="
 
 make "$make_args" $no_mafftlinks -j$CPU_COUNT build
