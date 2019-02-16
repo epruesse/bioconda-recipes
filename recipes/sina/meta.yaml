@@ -12,6 +12,7 @@ source:
 
 build:
   number: 28
+  noarch: python
 
 requirements:
   build:
