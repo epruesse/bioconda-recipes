@@ -32,10 +32,4 @@ test:
 
 about:
   home: https://github.com/epruesse/SINA
-  license: GPLv3
   license_family: GPL
-  summary: |
-    SINA is a tool for aligning sequences with an existing multiple sequence
-    alignment (MSA) at high accuracy. It can also execute a homology search based
-    on the computed alignment and generate a per sequence classifications from the
-    search results.
