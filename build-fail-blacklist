@@ -46,9 +46,6 @@ recipes/erds
 # non-standard test
 recipes/fermikit
 
-# build-error
-recipes/mimodd
-
 # The following recipes are also found in other channels (notably conda-forge).
 # They are placed here on the blacklist until we can deal with them further.
 recipes/aenum
