@@ -32,6 +32,7 @@ requirements:
     - libarbdb
     - boost-cpp
     - zlib
+    - setuptools
     - tbb
     - {{ pin_compatible('glib') }}
 
@@ -42,7 +43,7 @@ test:
 about:
   home: https://github.com/epruesse/SINA
   doc_url: https://sina.readthedocs.io
-  license: GPLv3
+  license: AGPLv3
   license_family: GPL
   license_url: https://raw.githubusercontent.com/epruesse/SINA/master/LICENSE
   summary: Reference based multiple sequence alignment
