@@ -13,9 +13,6 @@ source:
 build:
   number: 1
   
-build:
-  number: 2
-
 requirements:
   build:
     - {{ compiler('cxx') }}
